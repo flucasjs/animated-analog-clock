@@ -8,7 +8,7 @@ body {
     background-color: aqua;
 }
 
-.container {
+.app-container {
     background-image: url(img1.jpg);
     background-size: 100%;
     width: 25em;
@@ -44,7 +44,7 @@ body {
     z-index: 10;
 }
 
-.minutes-container, .hours-container, .seconds-container {
+.clock__hand-container {
     position: absolute;
     top: 0;
     right: 0;
@@ -52,7 +52,7 @@ body {
     left: 0;
 }
 
-.hours {
+.clock__hours-hand {
     background: black;
     height: 20%;
     width: 2.5%;
@@ -62,7 +62,7 @@ body {
     transform-origin: 50% 100%;
 }
 
-.minutes {
+.clock__minutes-hand {
     background: black;
     height: 40%;
     width: 2%;
@@ -72,7 +72,7 @@ body {
     transform-origin: 50% 100%;
 }
 
-.seconds {
+.clock__seconds-hand {
     background: black;
     height: 45%;
     width: 1%;
@@ -83,15 +83,15 @@ body {
     z-index: 8;
 }
 
-.hours-container {
+.clock__hand-container--animate-hours {
     animation: rotate 43200s infinite steps(60);
 }
 
-.minutes-container {
+.clock__hand-container--animate-minutes {
     animation: rotate 3600s infinite steps(60);
 }
 
-.seconds-container {
+.clock__hand-container--animate-seconds {
     animation: rotate 60s infinite steps(60);
 }
 

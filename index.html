@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Analog Clock</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <article class="clock">
-            <div class="hours-container">
-                <div class="hours"></div>
+    <div class="app-container">
+        <div class="clock">
+            <div class="clock__hand-container clock__hand-container--animate-hours">
+                <div class="clock__hours-hand"></div>
             </div>
-            <div class="minutes-container">
-                <div class="minutes"></div>
+            <div class="clock__hand-container clock__hand-container--animate-minutes">
+                <div class="clock__minutes-hand"></div>
             </div>
-            <div class="seconds-container">
-                <div class="seconds"></div>
+            <div class="clock__hand-container clock__hand-container--animate-seconds">
+                <div class="clock__seconds-hand"></div>
             </div>
-        </article>
+        </div>
         </div>
     </div>
 </body>

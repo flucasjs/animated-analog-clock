@@ -18,15 +18,15 @@ function initLocalClocks() {
             // When the hour hand is between two numbers,
             // the minute hand takes twice as long to do a full rotation
             // so add this amount to the deg.
-            hand: 'hours',
+            hand: 'clock__hours-hand',
             angle: (hours * 30) + (minutes / 2)
         },
         {
-            hand: 'minutes',
+            hand: 'clock__minutes-hand',
             angle: (minutes * 6)
         },
         {
-            hand: 'seconds',
+            hand: 'clock__seconds-hand',
             angle: (seconds * 6)
         }
     ];
